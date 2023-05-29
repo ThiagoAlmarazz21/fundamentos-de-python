@@ -24,9 +24,10 @@ if stock >= 100 and stock <= 1000:
 else: 
   print('Por favor ingrese un valor entre 100 y 1000')
 
-num = int(input('Ingrese un valor para saber si es par o impar: '))
 
 # PROGRAMA PARA SABER SI UN NÚMERO ES PAR O IMPAR
+num = int(input('Ingrese un valor para saber si es par o impar: '))
+
 if num % 2 == 0:
   print('El número es PAR')
 else: 

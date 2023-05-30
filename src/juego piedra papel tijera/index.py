@@ -1,14 +1,23 @@
+import random 
+options = ('piedra', 'papel', 'tijera')
+
 username = str(input('Cual es tu nombre? '))
 print(f'Bienvenido al juego {username}!')
 
 user = input('Elige una opcion: piedra, papel o tijera = ')
 user = user.lower()
-pc = 'piedra'
 
-# user_win = print(f'{username} gana!')
+if not user in options:
+  print('¡Esa opcion no es válida!')
+  exit()
+
+pc = random.choice(options)
+
+print('User option =>', user)
+print('Pc option =>', pc)
 
 if user == pc:
-  print('Empate!')
+  print('¡Empate!')
 elif user == 'piedra' and pc == 'tijera':
   print(f'{username} eligió "piedra"')
   print(f'{username} gana!')
